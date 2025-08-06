@@ -1,24 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import EventDetails from "../components/EventDetails.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout title="Private Poker Night - Rules & Etiquette" description="Learn the rules and etiquette for our private poker night event">
-  <!-- Hero Section -->
-  <div slot="hero" class="hero bg-gradient-to-r from-primary to-secondary text-primary-content py-16">
-    <div class="hero-content text-center">
-      <div class="max-w-md">
-        <h1 class="text-5xl md:text-6xl font-bold font-[Playfair_Display]">Private Poker Night</h1>
-        <p class="text-lg mt-4 opacity-90">An Exclusive Evening of Cards & Camaraderie</p>
-        <div class="alert alert-warning shadow-lg max-w-sm mx-auto mt-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-2.186-.833-2.956 0L3.858 16.5c-.77.833.192 2.5 1.732 2.5z" /></svg>
-          <span class="text-sm font-semibold text-warning-content">This is strictly a card game - NOT a sex party</span>
-        </div>
-      </div>
-    </div>
-  </div>
 
-    <EventDetails />
+ 
+  <!-- Hero Section -->
+
+<Hero slot="hero" >
+  <h1 class="text-5xl md:text-6xl font-bold font-[Playfair_Display]">Private Poker Night</h1>
+  <p class="text-lg mt-4 opacity-90">An Exclusive Evening of Cards & Camaraderie</p>
+  <div class="alert alert-warning shadow-lg max-w-sm mx-auto mt-6">
+    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-2.186-.833-2.956 0L3.858 16.5c-.77.833.192 2.5 1.732 2.5z" /></svg>
+    <span class="text-sm font-semibold text-warning-content">This is strictly a card game - NOT a sex party</span>
+  </div>
+</Hero>
+
+<EventDetails />
 
   
 

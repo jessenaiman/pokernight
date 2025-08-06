@@ -18,11 +18,11 @@
       <ul
         tabindex="0"
         class="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a class="nav-link" data-target="invitation">The Invitation</a></li>
-        <li><a class="nav-link" data-target="rules">House Rules</a></li>
-        <li><a class="nav-link" data-target="mechanics">Game Mechanics</a></li>
-        <li><a class="nav-link" data-target="hands">Poker Hands</a></li>
-        <li><a class="nav-link" data-target="variations">Variations</a></li>
+        <li><a href="/">The Invitation</a></li>
+        <li><a href="/house-rules">House Rules</a></li>
+        <li><a href="/game-rules">Game Mechanics</a></li>
+        <li><a href="/poker-hands">Poker Hands</a></li>
+        <li><a href="/variations">Variations</a></li>
       </ul>
     </div>
     <div class="text-xl font-bold">
@@ -30,12 +30,12 @@
     </div>
   </div>
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu bg-base-200 menu-horizontal rounded-box">
-      <li><a class="nav-link" data-target="invitation">The Invitation</a></li>
-      <li><a class="nav-link" data-target="rules">House Rules</a></li>
-      <li><a class="nav-link" data-target="mechanics">Game Mechanics</a></li>
-      <li><a class="nav-link" data-target="hands">Poker Hands</a></li>
-      <li><a class="nav-link" data-target="variations">Variations</a></li>
+    <ul class="menu bg-base-200 lg:menu-horizontal rounded-box">
+      <li><a href="/">The Invitation</a></li>
+      <li><a href="/house-rules">House Rules</a></li>
+      <li><a href="/game-rules">Game Mechanics</a></li>
+      <li><a href="/poker-hands">Poker Hands</a></li>
+      <li><a href="/variations">Variations</a></li>
     </ul>
   </div>
   <div class="navbar-end">
@@ -73,57 +73,4 @@
 </div>
 
 <!-- Page Header -->
-<header class="hero bg-gradient-to-r from-primary to-secondary text-primary-content py-16">
-  <div class="hero-content text-center">
-    <div class="max-w-md">
-      <h1 class="text-5xl md:text-6xl font-bold font-[Playfair_Display]">Private Poker Night</h1>
-      <p class="text-lg mt-4 opacity-90">An Exclusive Evening of Cards & Camaraderie</p>
-    </div>
-  </div>
-</header>
 
-<script>
-  // Navigation functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link') as NodeListOf<HTMLAnchorElement>;
-    const sections = document.querySelectorAll('.content-section') as NodeListOf<HTMLElement>;
-    
-    // Show invitation section by default
-    showSection('invitation');
-    
-    navLinks.forEach(link => {
-      link.addEventListener('click', function(this: HTMLAnchorElement, e: Event) {
-        e.preventDefault();
-        const target = this.getAttribute('data-target');
-        if (target) {
-          showSection(target);
-        }
-        
-        // Update active state
-        navLinks.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-    
-    function showSection(targetId: string): void {
-      sections.forEach(section => {
-        if (section.id === targetId) {
-          section.classList.remove('hidden');
-        } else {
-          section.classList.add('hidden');
-        }
-      });
-    }
-  });
-</script>
-
-<style>
-  .nav-link.active {
-    color: hsl(var(--p));
-    font-weight: 600;
-  }
-  
-  .nav-link:hover {
-    color: hsl(var(--p));
-  }
-</style>

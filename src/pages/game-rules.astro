@@ -1,0 +1,90 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout title="Private Poker Night - Rules & Etiquette" description="Learn the rules and etiquette for our private poker night event">
+<Hero slot="hero">
+        <h1 class="font-bold text-xl mb-2">Game Rules</h1>
+        <div class="card bg-base-100 rounded-box shadow-md p-6 text-lg">
+        <ul class="list-disc list-inside">
+            <li><strong>Starting Chips:</strong> Each player begins with 10 white chips.</li>
+            <li><strong>Ante:</strong> 1 white token per player before each hand.</li>
+            <li><strong>Maximum Raise:</strong> 5 tokens during any betting round.</li>
+            <li><strong>Maximum Clothes:</strong> 7 pieces of clothing.</li>
+            <li><strong>Game Duration:</strong> 2 hours.</li>
+        </ul>
+        </div>
+</Hero>
+
+    <div class="max-w-2xl mx-auto">
+        <ul class="list bg-base-100 rounded-box shadow-md">
+            <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Clothing Removal Order & Point Values</li>
+            
+            <li class="list-row">
+                <div class="text-4xl font-thin opacity-30 tabular-nums">01</div>
+                <div class="list-col-grow">
+                    <div class="font-semibold">Socks (pair)</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">10 points</div>
+                </div>
+                <div class="badge badge-neutral">10</div>
+            </li>
+            
+            <li class="list-row">
+                <div class="text-4xl font-thin opacity-30 tabular-nums">02</div>
+                <div class="list-col-grow">
+                    <div class="font-semibold">Shoes (pair)</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">10 points</div>
+                </div>
+                <div class="badge badge-neutral">10</div>
+            </li>
+            
+            <li class="list-row">
+                <div class="text-4xl font-thin opacity-30 tabular-nums">03</div>
+                <div class="list-col-grow">
+                    <div class="font-semibold">Hat/Accessory</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">10 points</div>
+                </div>
+                <div class="badge badge-neutral">10</div>
+            </li>
+            
+            <li class="list-row">
+                <div class="text-4xl font-thin opacity-30 tabular-nums">04</div>
+                <div class="list-col-grow">
+                    <div class="font-semibold">Shirt/Top</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">10 points</div>
+                </div>
+                <div class="badge badge-neutral">10</div>
+            </li>
+            
+            <li class="list-row">
+                <div class="text-4xl font-thin opacity-30 tabular-nums">05</div>
+                <div class="list-col-grow">
+                    <div class="font-semibold">Pants/Skirt</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">10 points</div>
+                </div>
+                <div class="badge badge-neutral">10</div>
+            </li>
+            
+            <li class="list-row">
+                <div class="text-4xl font-thin opacity-30 tabular-nums">06</div>
+                <div class="list-col-grow">
+                    <div class="font-semibold">Underwear (men's/panties)</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">25 points</div>
+                </div>
+                <div class="badge badge-warning">25</div>
+            </li>
+            
+            <li class="list-row">
+                <div class="text-4xl font-thin opacity-30 tabular-nums">07</div>
+                <div class="list-col-grow">
+                    <div class="font-semibold">Bra (women's)</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">25 points</div>
+                </div>
+                <div class="badge badge-warning">25</div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+</BaseLayout>
